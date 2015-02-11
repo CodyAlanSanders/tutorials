@@ -1,0 +1,20 @@
+[		
+    {
+  		"url": "http://tutorials.jenkov.com/angularjs/index.html",
+  		"title": "AngularJS Tutorial",
+  		"image": "http://tutorials.jenkov.com/images/layout/small-portrait_mini.jpg",
+  		"author": "Jakob Jenkov"
+  	},
+  	{
+  		"url": "http://tutorialzine.com/2013/08/learn-angularjs-5-examples/",
+  		"title": "Learn AngularJS With These 5 Practical Examples",
+  		"image": "http://blog.guinatal.com/wp-content/uploads/2015/01/angularjs.png",
+  		"author": "JMartin Angelov"
+  	},
+  	{
+  		"url": "https://github.com/angular-app/angular-app",
+  		"title": "AngularJS CRUD application demo",
+  		"image": "http://blog.guinatal.com/wp-content/uploads/2015/01/angularjs.png",
+  		"author": "angular-app"
+  	}
+]
