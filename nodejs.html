@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CAS - NodeJS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+	
+	<!-- Additional Styles -->
+    <link href="css/styles.css" rel="stylesheet">	
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>	
+	<script type="text/javascript" src="app.js"></script>
+	
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">Home</a>
+          <a class="blog-nav-item" href="understanding_angular.html">AngularJS</a>
+          <a class="blog-nav-item" href="nodejs.html">Node.js</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Node.js</h1>
+        <p class="lead blog-description">Briefing on an Asynchronous Technology</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <!--<h2 class="blog-post-title">Sample blog post</h2>-->
+            <p class="blog-post-meta">February 21, 2015 by <a href="#">Cody Alan Sanders</a></p>
+
+            <!--<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>-->
+            <hr>
+            <p>With JavaScript's continued popularity within the realm of web development, new libraries are regularly introduced. Other technologies, such as Bootstrap, expedites the development process, allowing well-designed and functional sites to be rolled out quicker than ever before. Node.js, initially released in 2009, changes the face of the web, as web applications with real-ime, two-way connections because possible.</p>
+            <!--<blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>-->
+            <p>Ryan Dahl, the creator of Node.js, set out to create web applications with push capability. Most existing technologies only supported exchanges initiated by the client. The goal of Node.js was to establish a two-way connection between the application and the client where the two nodes could communicate freely and allow the server, essentially, to react to events and send events where necessary.</p>
+            <br/>
+			<br/>
+			<h3>Technology</h2>
+				<p>Node.js relies heavily on Google Chrome's V8 JavaScript engine. Node.js is a set of libraries on top of V8 that allows it to perform networking-related tasks.</p>
+				<p>A significant design feature that contributes to the power of Node.js is being designed to work outside the browser. Where JavaScript was notorious for being a client-side web technology, Node brought with it server-side functionality.</p>
+			<br/>
+				<img src="images/v8js.jpg" align="center">
+				<figcaption>Traditional JavaScript has native objects as well as host objects from within the browser.</figcaption>
+				<img src="images/v8jsWithNode.jpg" align="center">
+				<figcaption>Node.js allows JavaScript outside the browser, so objects such as http can be used. This can allow you to use methods like http.get() to retrieve and parse information from an API.</figcaption>								
+			<br/>
+			<br/>
+			<h3>Non-Blocking I/O</h3>
+				<p>As described, Node.js was developed as a solution for creating asynchronous applications. Communication was initiated by the client and tasks would be handled from beginning to end before the server would begin completing the same steps for another task. With this design, processes would be held up as any particular event occurred. Therefore, the solution was to design non-blocking inputs and outputs.</p>
+				<p>Node.js provides a non-blocking solution. One an event is created, a callback is registered that would return to the event. This allows the application to continue working on other tasks and then return to the tasks via the callback when it is ready.</p>
+			<br/>
+			<br/>
+			<h3>Great, so what does this mean?</h3>	
+				<p>Node can be a handful upon initial understanding, so let's break it down:</p>
+			<br/>	
+			<h4>Business with Traditional Technologies</h4>
+				<img src="images/nookingtons.jpg" align="center" style="width:672px;height:360px">
+				<p>Let's say we have a business, Nookington's, with an estranged gasmask wearing salesman. In the traditional business model, once the salesman makes a sale, he must wait for funds from the sale to be received before he can work on an other sale. While this is effective in ensuring that the process of selling an item and then receiving payment is completed, it isn't efficient if other customers want to shop at Nookington's.</p>
+				<p>To increase the sales under the traditional business model, the owner would have to hire more workers (or, in a technology-sense, apply more processing power). This solution is costly. There must be a way to make gasmask salesman more efficient.</p>
+			<h4>Business with Node</h4>
+				<p>The solution is to use Node. Node places a service desk at Nookington's. The service desk is used for customers ready to pay (similar to the callback). So, the salesman can continue to service other customers and when purchasers are ready to pay, he can simply slide over, process their payment and continue to service others.</p>
+				<p>Node is powerful in this same way. When an application will be receiving input from many users simultaneously, it serves as a way to react actively and without delay. Node can serve well for real-time applications with ever-changing data, such as stock brokers' dashboards or tracking 'Likes' on an image.</p>
+			<br/>
+			<br/>
+			<p>Node.js is a powerful tool that will further the revolution of web development. Using Javascript outside the browser with Node and the powerful connectivity it provides to APIs, along with the server-side functionalities will certainly lead to the development of some of the most functional and responsive applications to date. The stable release dropped on February 6, 2015; now's the time to get coding.</p>
+			</div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <!-- <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar --> 
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <!-- <a href="#">Back to top</a> -->
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  </body>
+</html>
