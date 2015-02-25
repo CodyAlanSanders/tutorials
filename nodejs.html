@@ -55,7 +55,7 @@
 
             <!--<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>-->
             <hr>
-            <p>With JavaScript's continued popularity within the realm of web development, new libraries are regularly introduced. Other technologies, such as Bootstrap, expedites the development process, allowing well-designed and functional sites to be rolled out quicker than ever before. Node.js, initially released in 2009, changes the face of the web, as web applications with real-ime, two-way connections because possible.</p>
+            <p>With JavaScript's continued popularity within the realm of web development, new libraries are regularly introduced. Other technologies, such as Bootstrap, expedites the development process, allowing well-designed and functional sites to be rolled out quicker than ever before. Node.js, initially released in 2009, changes the face of the web, as web applications with real-ime, two-way connections become possible.</p>
             <!--<blockquote>
               <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </blockquote>-->
@@ -87,6 +87,29 @@
 			<h4>Business with Node</h4>
 				<p>The solution is to use Node. Node places a service desk at Nookington's. The service desk is used for customers ready to pay (similar to the callback). So, the salesman can continue to service other customers and when purchasers are ready to pay, he can simply slide over, process their payment and continue to service others.</p>
 				<p>Node is powerful in this same way. When an application will be receiving input from many users simultaneously, it serves as a way to react actively and without delay. Node can serve well for real-time applications with ever-changing data, such as stock brokers' dashboards or tracking 'Likes' on an image.</p>
+			<br/>
+			<br/>
+			<h3>Node Code</h3>
+			<p>As mentioned, one of the most powerful aspects of Node.js is its ability to work outside the browser. This means that objects used do not necessarily have to be a web component, such a an XMLHttpRequest. Let's look at some examples of using JavaScript outside the browser.</p>
+			<br/><br/>
+			<h4>Operating System</h4>
+			<p>Operating System (os) provides operating-system related functionality that allow you to extract information from a client. One piece of information you can gather is the Host Name:</p>
+			<code>
+				var os = require("os"); <br/>
+				os.hostname();
+			</code>
+			<br/><br/>
+			<h4>HTTP</h4>
+			<p>HTTP is used to support features of the protocol and allow implementation. For example, we can request data from an API using the aforementioned http.get():</p>
+			<code>
+			var http = require("http"); <br/>
+			var username = "codyalan"; <br/><br/>
+
+			var request = http.get(http://codyalansanders.github.io/" + username + ".json", function(response) { <br/>
+			console.log(response.statusCode);} 
+			</code>
+			<p>With an API set up to return username information, such as a number of points earned or an image of a badge or certificate, this would allow you to extract that data for use in other locations, such as bragging rights to your friends.</p>
+			<br/>
 			<br/>
 			<br/>
 			<p>Node.js is a powerful tool that will further the revolution of web development. Using Javascript outside the browser with Node and the powerful connectivity it provides to APIs, along with the server-side functionalities will certainly lead to the development of some of the most functional and responsive applications to date. The stable release dropped on February 6, 2015; now's the time to get coding.</p>
